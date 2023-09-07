@@ -111,7 +111,7 @@
     border-bottom: 4px solid brown ;
     padding-bottom: 5px;
 }
-.workshopContainer{
+.workshopContainer , .studioContainer ,.artContainer{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -129,7 +129,7 @@
     flex: 1;
     padding: 70px 0 0 0;
     align-items: center;
-
+    overflow: hidden;
     height: 300px;
     text-align: center;
     background-color: rgba(47, 46, 46, 0.99);
@@ -146,10 +146,49 @@
 .container{
     height: 300px;
     overflow: hidden;
-    flex: 1;
+    flex: 1.5;
     background-color: aquamarine;
 
 }
 .workshopImg{
     height: 300px;
+}
+.studioContent{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.artContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.artContainer{
+    background-color: blanchedalmond;
+    padding:20px  30px;
+}
+.arttext{
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 50px;
+
+}
+.arttext > p{
+    flex-wrap: wrap;
+    text-align: center;
+    padding:20px 200px;
+}
+.artproduct{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.artimg{
+    width: 300px;
+    height: 200px;
+    margin: 20px 0;
 }

@@ -1,6 +1,4 @@
-type myitems ={
 
-}
 export const items = [
     {
         id:1,
@@ -13,5 +11,19 @@ export const items = [
     {
         id:1,
         hero: '/pot8.avif',
+    },
+]
+export const seconditems = [
+    {
+        id:1,
+        hero: '/pot1.avif',
+    },
+    {
+        id:1,
+        hero: '/pot2.avif',
+    },
+    {
+        id:1,
+        hero: '/pot4.avif',
     },
 ]
