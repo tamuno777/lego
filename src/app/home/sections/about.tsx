@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/home/desktop.module.css'
+import styles from '../../../styles/home/desktop.module.css'
 
 
 export default function About() {

@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../../styles/home/desktop.module.css'
-import { artitems } from "../../data/artitems";
+import styles from '../../../styles/home/desktop.module.css'
+import { artitems } from "../../../data/artitems";
 import { items } from '@/data/caroselitems';
 
 
