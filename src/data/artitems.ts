@@ -6,7 +6,7 @@ export const artitems = [
         productprice: 48
     },
     {
-        id:1,
+        id:2,
         hero: '/pot1.avif',
         productname : 'JITO',
         productprice: 68
@@ -14,7 +14,7 @@ export const artitems = [
 
     },
     {
-        id:1,
+        id:3,
         hero: '/pot7.avif',
         productname : 'KADI',
         productprice: 98
