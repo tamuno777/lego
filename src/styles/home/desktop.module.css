@@ -1,3 +1,4 @@
+@import url(./mobile.module.css);
 .navbarContainer{
     display: flex;
     padding: 10px 20px;
@@ -85,11 +86,13 @@
     gap: 20px;
 
 
+
 }
 .about > p {
     flex-wrap: wrap;
     width: 50%;
     margin-top: 15px;
+
     /* flex: 1fr; */
 }
 
@@ -100,6 +103,7 @@
     align-items: center;
     background-color: rgba(47, 46, 46, 0.99);
     color: aliceblue;
+
     width: 50%;
     padding: 70px 0;
     gap: 20px;
@@ -116,6 +120,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     
 }
 .workshopContent{
@@ -186,23 +191,25 @@
     justify-content: center;
     flex-direction: row;
     gap: 20px;
-    /* animation: artproduct 1s ease 0s 1 normal forwards; */
 }
-/* @keyframes artproduct {
-	0% {
-		opacity: 0;
-		transform: translateY(250px);
-	}
 
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-} */
 .artimg{
     width: 300px;
     height: 200px;
     margin: 20px 0;
+    animation: fadee 1s ease 0s 1 normal forwards;
+
+}
+@keyframes fadee {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 .testimoniaContainer{
     display: flex;
@@ -235,6 +242,8 @@
     left: 34vw;
     z-index: 20;
     margin-top: -150px;
+    animation: fadee 1s ease 0s 1 normal forwards;
+
 }
 .test{
     background-color: black;
@@ -261,4 +270,295 @@
 .footersub{
     display: flex;
     gap: 20px;
+}
+@media only screen and (min-width: 280px) and (max-width: 560px) {
+    .navbarContent{
+        display: flex;
+        /* flex-direction: row; */
+        gap: 230px;
+        justify-content: center;
+        
+    }
+   .navbarContainer{
+    border: none;
+   }
+    .aboutContent,.workshopContent{
+    flex-direction: column;
+    width: 100%;
+
+   }
+   .about , .aboutReg{
+    width: 100%;
+   }
+   .about > p{
+    text-align: center;
+   }
+   .workshoptext{
+    padding: 50px 0 ;
+    height: fit-content;
+
+
+   }
+  .workshopImg{
+    height: 400px;
+  }
+  .workshopContainer , .studioContainer ,.artContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: stretch; */
+
+    
+}
+.container{
+    margin-bottom: 0;
+    height: 100px;
+    flex: 1;
+    background-color: blanchedalmond;
+}
+  
+  .studioContent{
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin-top: -40px;
+
+  }
+  .artproduct{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .arttext > p{
+    /* flex-wrap: wrap; */
+    text-align: center;
+    padding:20px 20px;
+}
+.testimoniatext{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 30px;
+    width: 300px;
+    height: 300px;
+    background-color: blanchedalmond;
+    position: relative;
+    top: 50%;
+    left: 34vw;
+    z-index: 20;
+    margin-top: -150px;
+    animation: fadee 1s ease 0s 1 normal forwards;
+
+}
+.contact{
+    margin-top: -10px;
+}
+.contact,.footerContainer{
+width:242vw ;
+border: black;
+/* min-width: 100vw; */
+}
+.footerContainer{
+    padding: 20px 0;
+}
+.testimoniatext{
+           
+    left: 74vw;
+    
+
+}
+}
+@media only screen and (width: 375px) {
+    .contact,.footerContainer{
+        width:267vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .testimoniatext{
+           
+            left: 74vw;
+            
+        
+        }
+}
+
+@media only screen and (min-width: 390px) {
+    .contact,.footerContainer{
+        width:256vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .testimoniatext{
+           
+            left: 74vw;
+            
+        
+        }
+}
+@media only screen and (min-width: 393px) {
+    .contact,.footerContainer{
+        width:254vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .testimoniatext{
+           
+            left: 74vw;
+            
+        
+        }
+}
+@media only screen and (min-width: 360px) {
+    .contact,.footerContainer{
+        width:278vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .testimoniatext{
+           
+            left: 74vw;
+            
+        
+        }
+}
+@media only screen and (min-width: 412px) {
+    .contact,.footerContainer{
+        width:243vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .testimoniatext{
+           
+            left: 74vw;
+            
+        
+        }
+}
+@media only screen and (min-width: 540px) {
+    .contact,.footerContainer{
+        width:186vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .testimoniatext{
+           
+            left: 74vw;
+            
+        
+        }
+}
+@media only screen and (min-width: 820px) {
+    .contact,.footerContainer{
+        width:122vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .contact{
+            margin-top: -2px;
+        }
+        .testimoniatext{
+           
+            left: 54vw;
+            
+        
+        }
+}
+@media only screen and (min-width: 768px) {
+    .contact,.footerContainer{
+        width:130vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .contact{
+            margin-top: -2px;
+        }
+        .testimoniatext{
+           
+            left: 54vw;
+            
+        
+        }
+}
+@media only screen and (min-width: 912px) {
+    .contact,.footerContainer{
+        width:110vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .contact{
+            margin-top: -2px;
+        }
+        .testimoniatext{
+           
+            left: 54vw;
+            
+        
+        }
+}
+@media only screen and (min-width: 280px) {
+    .contact,.footerContainer{
+        width:359vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .contact{
+            margin-top: -2px;
+        }
+        .testimoniatext{
+           
+            left: 64vw;
+            
+        
+        }
+}
+@media only screen and (min-width: 412px) {
+    .contact,.footerContainer{
+        width:243vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .contact{
+            margin-top: -2px;
+        }
+        .testimoniatext{
+           
+            left: 64vw;
+            
+        
+        }
+}
+@media only screen and (min-width: 1280px) {
+    .contact,.footerContainer{
+        width:100vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .contact{
+            margin-top: -2px;
+        }
+        .testimoniatext{
+           
+            left: 34vw;
+            
+        
+        }
+}
+@media only screen and (min-width: 1024px) {
+    .contact,.footerContainer{
+        width:100vw ;
+        border: black;
+        /* min-width: 100vw; */
+        }
+        .contact{
+            margin-top: -2px;
+        }
+        .testimoniatext{
+           
+            left: 34vw;
+            
+        
+        }
 }
